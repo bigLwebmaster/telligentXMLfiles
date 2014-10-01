@@ -11,7 +11,24 @@ $core_v2_wiki.Current.Name: sylw newydd ar gyfer $core_v2_wikiPage.Current.Title
 #set($post = $core_v2_wikiPage.Current)
 #set($comment = $core_v2_comments.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<!-- HEADER START WELSH -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/waleslogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Cymuned</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END WELSH -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_wikiUrls.Page($post.Id)">$post.Title</a>: sylw newydd</b>
 	</div>

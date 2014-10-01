@@ -9,9 +9,27 @@ Account locked: $core_v2_configuration.SiteName
 			<![CDATA[
 #set($unlockTime = $email_utility.ParseInt($email_data.Current.Get("UnlockTime")))
 
+
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
 <div style="font-family:Trebuchet MS, arial; font-size: 14px;">
   <p>
-    Your account has been locked on <a href="$core_v2_urls.Home()">$core_v2_configuration.SiteName</a> due to too many failed login attempts. #if($core_v2_configuration.UnlockTime >= 0) It will be unlocked after a short amount of time. #else contact a community manager to get it unlocked. #end If you didn't try to login, contact a community manager.
+    Your account has been locked on <a href="$core_v2_urls.Home()">$core_v2_configuration.SiteName</a> due to too many failed login attempts. #if($core_v2_configuration.UnlockTime >= 0) It will be unlocked after a short amount of time. #else  Please contact webmaster@biglotteryfund.org.uk to get it unlocked.  #end  If you didn't try to login, contact webmaster@biglotteryfund.org.uk.
   </p>
 </div>
 			]]>
@@ -20,7 +38,16 @@ Account locked: $core_v2_configuration.SiteName
 			<![CDATA[
 #set($unlockTime = $email_utility.ParseInt($email_data.Current.Get("UnlockTime")))
 
-Your account has been locked on $core_v2_configuration.SiteName ($core_v2_urls.Home()) due to too many failed login attempts.  #if($core_v2_configuration.UnlockTime >= 0) It will be unlocked after a short amount of time. #else contact a community manager to get it unlocked. #end If you didn't try to login, contact a community manager.
+Your account has been locked on $core_v2_configuration.SiteName ($core_v2_urls.Home()) due to too many failed login attempts. 
+
+ #if($core_v2_configuration.UnlockTime >= 0) It will be unlocked after a short amount of time. 
+ #else 
+
+ Please contact webmaster@biglotteryfund.org.uk to get it unlocked. 
+
+ #end 
+
+ If you didn't try to login, contact webmaster@biglotteryfund.org.uk.
 			]]>
 		</textBody>
 	</emailTemplate>

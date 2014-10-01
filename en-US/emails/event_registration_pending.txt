@@ -9,13 +9,29 @@ $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEven
 ---------------------------------------------------------
 
 
-This event requires registration confirmation.  This notice does not guarantee that you will be able to attend this event.  You will receive a further message confirming or cancelling this reservation.
+This event requires registration confirmation. You will receive a further message confirming or cancelling this reservation.
 
 To view this event please visit $globals.FullPath($calendarUrls.Event($calendarEvent))
 #end
 
 #mimebody("text/html")
-<div style="font-family:Trebuchet MS, arial; font-size: 12pt;">
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 <h4>Your request to attend $calendarEvent.EventTitle has been received.</h4>
 <hr/>
   <p>
@@ -24,7 +40,7 @@ To view this event please visit $globals.FullPath($calendarUrls.Event($calendarE
   <hr/>
   
   <p>
-This event requires registration confirmation.  This notice does not guarantee that you will be able to attend this event.  You will receive a further message confirming or cancelling this reservation.
+This event requires registration confirmation. You will receive a further message confirming or cancelling this reservation.
  </p>
   <p>
 To  view this event please visit <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>

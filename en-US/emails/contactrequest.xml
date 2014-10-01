@@ -9,10 +9,28 @@ $core_v2_configuration.SiteName - contact request: $core_v2_contactRequest.Curre
 			<![CDATA[
 #set($contactRequest = $core_v2_contactRequest.Current)
 
+
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
 <div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<b>Subject</b>: $contactRequest.Subject
 </div>
-<div style="margin: 15px; width: 95%; font-family:Trebuchet MS, arial; font-size: 12px; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">
+<div style="margin: 15px; width: 95%; font-family:'Trebuchet MS', Arial; font-size: 14px; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">
 	$email_utility.RenderHtml($contactRequest.Body)
 </div>
 <div style="color: #7F7F7F; font-family:Trebuchet MS, arial; font-size: 8pt;">

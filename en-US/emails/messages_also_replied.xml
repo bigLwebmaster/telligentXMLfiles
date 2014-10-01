@@ -14,7 +14,26 @@ Reply to ${parent.Author.DisplayName}'s message on $core_v2_configuration.SiteNa
 #set($replies = $core_v2_replyMessage.List($parent.Id))
 #set($recipient = $core_v2_user.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px; color: #000000;">
+
+
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px; color: #000000;">
 	<b><a href="$message.Author.ProfileUrl">$message.Author.DisplayName</a> replied:</b> $email_utility.RenderHtml($message.RenderedBody)<br/>
 </div>
 <br />

@@ -32,6 +32,27 @@ $post.Subject
 	blockquote div.quote-user { font-weight: bold; }
 	blockquote div.quote-content p { margin: 0; font-style: italic; }
 </style>
+
+
+
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
+
 <div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$url">$post.Subject</a></b>
@@ -94,7 +115,7 @@ Attachments:
 #end
 
 --
-You were sent this email because you opted to receive email notifications when someone created a new thread.
+You were sent this email because you opted to receive email notifications about new threads.
 
 To unsubscribe from:
 - ...only this thread, disable notifications at $url.

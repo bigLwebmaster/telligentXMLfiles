@@ -15,7 +15,24 @@ $core_v2_configuration.SiteName: #if($core_v2_forumReply.Current)$core_v2_forumR
 	#set($post = $core_v2_forumThread.Current)
 #end
 
-<div style="font-family: arial; font-size: 10pt;">
+<!-- HEADER START WELSH -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/waleslogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Cymuned</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END WELSH -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 	Cafodd eich post Holi ac Ateb ei ddileu gan reolwr cymuned.<br/><br/>
 	<b>Rheswm:</b> $email_utility.RenderHtml($moderation.Reason)
 	<div style="margin: 15px; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid; color: #000000; width: 95%">

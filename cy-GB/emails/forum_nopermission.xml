@@ -11,7 +11,24 @@ Neges heb ei phostio - caniatâd wedi'i wrthod
 #set($group = $core_v2_group.Current)
 #set($message = $email_emailMessage.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<!-- HEADER START WELSH -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/waleslogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Cymuned</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END WELSH -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 	Roeddech chi wedi ceisio postio neges i Holi ac Ateb ond does gennych chi ddim hawl gwneud hynny ar hyn o bryd.<br/><br/>
 #if($groupMembership || $group.GroupType == "Dim ymuno")
 	<a href="$core_v2_groupUrls.Group($group.Id)">Cysylltwch â pherchennog y grŵp</a> os ydych chi'n credu y dylech fod â hawl.

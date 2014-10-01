@@ -14,6 +14,25 @@ $core_v2_forumReply.Current.Subject: answer suggested
 	blockquote div.quote-user { font-weight: bold; }
 	blockquote div.quote-content p { margin: 0; font-style: italic; }
 </style>
+
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
+
 <div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 <div style="font-size:12pt;"><b>The following post by $post.Author.DisplayName was suggested as an answer to "<a href="$core_v2_forumUrls.ForumReply($post.Id)">$post.Subject</a>":</b></div><br/><br/>
 	<div>$email_utility.RenderHtml($post)</div>

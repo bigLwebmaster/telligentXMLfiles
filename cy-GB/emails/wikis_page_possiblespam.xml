@@ -9,7 +9,24 @@ $core_v2_wikiPage.Current.Title: Wici yn sbam posib
 			<![CDATA[
 #set($page = $core_v2_wikiPage.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<!-- HEADER START WELSH -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/waleslogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Cymuned</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END WELSH -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 	<p>
 		<strong style="color:#FF0000">Nodwyd bod tudalen wici yn sbam posib gan y rhwystrwr sbam $core_v2_configuration.SiteName.</strong>
 	</p>

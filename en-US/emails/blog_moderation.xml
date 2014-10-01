@@ -9,9 +9,26 @@ $core_v2_blog.Current.Name: comments awaiting your moderation
 			<![CDATA[
 #set($blog = $core_v2_blog.Current)
 
-<div style="font-family:Trebuchet MS,  arial; font-size: 12px;">
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 	<p>
-		You have comments and/or trackbacks awaiting moderation for $blog.Name.
+		You have comments awaiting moderation for $blog.Name.
 	</p>
 	<div style="color: #7F7F7F; font-size: 12px;">
 		<p>
@@ -25,7 +42,7 @@ $core_v2_blog.Current.Name: comments awaiting your moderation
 			<![CDATA[
 #set($blog = $core_v2_blog.Current)
 			
-You have comments and/or trackbacks awaiting moderation for $blog.Name at $core_v2_blogUrls.AdminFeedback($blog.Id).
+You have comments awaiting moderation for $blog.Name at $core_v2_blogUrls.AdminFeedback($blog.Id).
 
 --
 You were sent this email because you are an owner of $blog.Name and the number of feedback items awaiting moderation has exceeded the notification threshold.

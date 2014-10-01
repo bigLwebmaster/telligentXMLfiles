@@ -13,7 +13,25 @@ Mae'ch post ar $core_v2_configuration.SiteName wedi cael ei nodi'n sbam neu'n gy
 #set($appealUrl = $core_v2_urls.AbuseAppeal($appeal.AppealId))
 #set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
 
-<div style="font-family: arial; font-size: 10pt;">
+
+<!-- HEADER START WELSH -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/waleslogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Cymuned</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END WELSH -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 
 <p>
 Annwyl  $author.DisplayName:<br />

@@ -9,10 +9,27 @@ From: $comment.User.DisplayName
 $comment.Body
 
 ---------------------------------------------------------
-You were sent this email because you opted to receive email notifications when someone updated a new event on the calendar $calendarEvent.Calendar.Name. To unsubscribe, visit .
+You were sent this email because you opted to receive email notifications when someone updated a new event on the calendar $calendarEvent.Calendar.Name. To unsubscribe, visit $globals.FullPath($calendarUrls.Event($calendarEvent)).
 #end
 
 #mimebody("text/html")
+
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
 <div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 <h4>New comment: $calendarEvent.EventTitle</h4>
 <hr/>
@@ -27,7 +44,7 @@ You were sent this email because you opted to receive email notifications when s
     <hr/>
     <p>
       you were sent this email because you opted to receive email
-      notifications when an event was updated. Please <a href="#">unsubscribe</a> if you no longer wish to receive updates.
+      notifications when an event was updated. Please <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">unsubscribe</a> if you no longer wish to receive updates.
     </p>
   </div>
 </div>

@@ -11,6 +11,23 @@ Message not posted - permission denied
 #set($group = $core_v2_group.Current)
 #set($message = $email_emailMessage.Current)
 
+<!-- HEADER START -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END -->
+
 <div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	You attempted to post a message to a Q&A to which you currently do not have permission to post.<br/><br/>
 #if($groupMembership || $group.GroupType == "Joinless")

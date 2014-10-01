@@ -11,7 +11,24 @@ Croeso i $core_v2_configuration.SiteName
 #set($falseValue = false)
 #set($trueValue = true)
 
-	<div style="font-family: arial; font-size: 10pt;">
+<!-- HEADER START WELSH -->
+  <div style=" margin-bottom:0px;">
+    <table>
+      <tr>
+        <td >
+          <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/waleslogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
+        </td>
+        <td >
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Cymuned</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr style="margin-bottom:10px; height:1px; color:#eee;" />
+
+<!-- HEADER END WELSH -->
+
+<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
 		<p>
 			Croeso i $core_v2_configuration.SiteName,
 		</p>
@@ -25,7 +42,7 @@ Croeso i $core_v2_configuration.SiteName
 					<a href="$core_v2_urls.Settings("%{Clean='true'}")">Eich proffil</a>
 				</li>
 				<li> 
-					<a href="$core_v2_urls.HelpAndSupport("%{Clean='true'}")">Help a chymorth</a>
+					<a href="http://www.biglotteryfund.org.uk/help-and-support">Help a chymorth</a>
 				</li>
 				<li> 
 					<a href="http://www.biglotteryfund.org.uk/funding/search-past-grants">Chwilio hen grantiau</a>, lle gallwch edrych drwy dudalennau a chreu tudalennau ar gyfer prosiectau a ariennir 
@@ -49,7 +66,7 @@ Croeso i $core_v2_configuration.SiteName
 			
 			Dyma ddolenni defnyddiol:
 			Eich proffil $core_v2_urls.Settings("%{Clean='true'}")
-			Help a chymorth $core_v2_urls.HelpAndSupport("%{Clean='true'}")
+			Help a chymorth http://www.biglotteryfund.org.uk/help-and-support
 			Chwilio hen grantiau, lle gallwch edrych drwy dudalennau a chreu tudalennau ar gyfer prosiectau a ariennir http://www.biglotteryfund.org.uk/funding/search-past-grants
 
 			Hwyl ar y cysylltu!
