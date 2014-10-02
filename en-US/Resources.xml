@@ -522,7 +522,7 @@
   <resource name="CreateNewAccount_PasswordRegExValidator">Password contains invalid characters.</resource>
   <resource name="CreateNewAccount_PasswordMisMatch">The passwords you entered do not match.</resource>
   <resource name="CreateNewAccount_ServicesAgreementRequired">You must accept the site terms and conditions.</resource>
-  <resource name="CreateNewAccount_NewUserMessage">{0} While browsing the community, don't forget to visit your {1}, which you can customise to include the information that is most important to you. Be sure to {2} to introduce yourself to the community.&lt;br/&gt;&lt;br/&gt;Happy connecting!</resource>
+  <resource name="CreateNewAccount_NewUserMessage">{0} While browsing the community, don't forget to visit your {1}, which you can customise to include the information that is most important to you. Be sure to {2} to introduce yourself to the community.&lt;br/&gt;&lt;br/&gt;</resource>
   <resource name="CreateNewAccount_EditProfileLink">edit your profile</resource>
   <resource name="CreateNewAccount_NewUserMessage_Home">home page</resource>
   <resource name="CreateNewAccount_NewUserMessage_ReturnUrl">Take me back to where I was.</resource>

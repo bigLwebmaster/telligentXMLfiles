@@ -33,26 +33,22 @@ Welcome to $core_v2_configuration.SiteName
 		<p>
 			Welcome to $core_v2_configuration.SiteName,
 		</p>
-		<p>
-			Sign in as <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a> to meet other community members and start participating.
+				<p>
+			Now that you have registered for our online Community you can sign in as <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a>, meet other community members and start taking part.
 		</p>
-		
-		<p> Here are some useful links:
-			<ul>
-				<li> 
-					<a href="$core_v2_urls.Settings("%{Clean='true'}")">Your profile</a>
-				</li>
-				<li> 
-					<a href="http://www.biglotteryfund.org.uk/help-and-support">Help &amp; support</a>
-				</li>
-				<li> 
-					<a href="http://www.biglotteryfund.org.uk/funding/search-past-grants">Past grants search</a>, where you can explore and create pages for funded projects 
-				</li>
-			</ul>
-		</p>
-		<p>
-			Happy connecting! <br /><br />
-		</p>
+
+		  <p>
+		  	If you haven’t filled out your <a href="$core_v2_urls.Settings()">profile</a> yet please do so.
+		  </p>
+		  <p>
+		  	Please join the <a href="http://community.biglotteryfund.org.uk/uk-wide/getting_started/default.aspx">Getting Started group</a> so you can say hello to other members and introduce yourself.
+		  </p>
+		  <p>
+			We want you to contribute and get the best out of our online Community. So join the conversation now. 
+		  </p>			
+		  <p>
+			Big Lottery Fund online Community is about networking, learning and sharing advice. We want everyone to be able to use and enjoy this site, so please abide by our <a href="www.biglotteryfund.org.uk/help-and-support/community-help/house-rules">house rules</a> and <a href="www.biglotteryfund.org.uk/about-big/customer-service/terms-of-use">terms and conditions</a>.
+		  </p>
 	</div>
 			]]>
 </htmlBody>

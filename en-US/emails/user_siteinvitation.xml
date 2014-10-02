@@ -15,10 +15,10 @@ $core_v2_user.Current.DisplayName invites you to join $core_v2_configuration.Sit
   <div style=" margin-bottom:0px;">
     <table>
       <tr>
-        <td >
+        <td>
           <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
         </td>
-        <td >
+        <td>
           <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
         </td>
       </tr>
@@ -34,7 +34,8 @@ $core_v2_user.Current.DisplayName invites you to join $core_v2_configuration.Sit
     <div>$email_utility.RenderHtml($invitation.Message)</div>
   </p>
   <p>
-    <a href="$core_v2_urls.AcceptInvitation($invitation.InvitationKey)">Accept this invitation</a> and join the community... $core_v2_configuration.SiteName offers blogs, forums, wikis, and media galleries to collaborate with friends. Connect with $user.DisplayName and others today!
+    <a href="$core_v2_urls.AcceptInvitation($invitation.InvitationKey)">Accept the invitation</a> and join the community. On $core_v2_configuration.SiteName you will be able to network with other people, learn about previous projects and get expert advice and share your knowledge. 
+    <br /> Connect with $user.DisplayName and join the conversation.
   </p>
 </div>
 			]]>
@@ -48,7 +49,9 @@ $user.DisplayName invites you to join $core_v2_configuration.SiteName at $core_v
 
 $email_utility.RenderText($invitation.Message)
 
-Accept this invitation at $core_v2_urls.AcceptInvitation($invitation.InvitationKey) and join the community... $core_v2_configuration.SiteName offers blogs, forums, wikis, and media galleries to collaborate with friends. Connect with $user.DisplayName and others today!
+Accept the invitation at $core_v2_urls.AcceptInvitation($invitation.InvitationKey) and join the community. On $core_v2_configuration.SiteName SiteName you will be able to network with other people, learn about previous projects and get expert advice and share your knowledge.
+
+Connect with $user.DisplayName and join the conversation.
 			]]>
 		</textBody>
 	</emailTemplate>
