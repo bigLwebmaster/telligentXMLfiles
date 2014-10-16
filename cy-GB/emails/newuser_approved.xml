@@ -29,29 +29,21 @@ Cymeradwywyd cais i fod yn aelod: Croeso i $core_v2_configuration.SiteName
 <!-- HEADER END WELSH -->
 
 <div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
-		<p>
-			Croeso i $core_v2_configuration.SiteName,
-		</p>
-		<p>
-			Mewngofnodwch fel <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a> i gwrdd ag aelodau eraill y gymuned ac i ddechrau cymryd rhan.
-		</p>
-		
-		<p> Dyma ddolenni defnyddiol:
-			<ul>
-				<li> 
-					<a href="$core_v2_urls.Settings("%{Clean='true'}")">Eich proffil</a>
-				</li>
-				<li> 
-					<a href="http://www.biglotteryfund.org.uk/help-and-support">Help a chymorth</a>
-				</li>
-				<li> 
-					<a href="http://www.biglotteryfund.org.uk/funding/search-past-grants">Chwilio hen grantiau</a>, lle gallwch edrych drwy dudalennau a chreu tudalennau ar gyfer prosiectau a ariennir 
-				</li>
-			</ul>
-		</p>
-		<p>
-			Hwyl ar y cysylltu! <br /><br />
-		</p>
+			
+			<p>Croeso i $core_v2_configuration.SiteName</p>
+
+			<p>Gan eich bod chi bellach wedi cofrestru ar gyfer ein Cymuned ar-lein gallwch fewngofnodi fel  $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")', cwrdd ag aelodau eraill y gymuned a dechrau cymryd rhan.</p>
+
+			
+			<p>Os nad ydych chi wedi llanw'ch proffil hyd yma, ewch ati yn awr.</p> 
+
+			<p>Ymunwch â'r grŵp Dechrau Arni  (http://community.biglotteryfund.org.uk/uk-wide/getting_started/default.aspx) er mwyn i chi ddweud helo wrth yr aelodau eraill a chyflwyno'ch hun.</p>
+
+			<p>Rydym eisiau i chi gyfrannu a chael y gorau o'n Cymuned ar-lein. Felly ymunwch â'r sgwrs yn awr.</p> 
+					
+			
+			<p>Mae Cymuned ar-lein y Gronfa Loteri Fawr yn ymwneud â rhwydweithio, dysgu a rhannu cyngor. Rydym eisiau i bawb allu defnyddio a mwynhau'r safle hwn, felly gofynnwn i chi gadw at ein rheolau tŷ (www.biglotteryfund.org.uk/help-and-support/community-help/house-rules) a thelerau ac amodau (www.biglotteryfund.org.uk/about-big/customer-service/terms-of-use).</p>
+
 	</div>
 			]]>
 </htmlBody>
@@ -60,16 +52,20 @@ Cymeradwywyd cais i fod yn aelod: Croeso i $core_v2_configuration.SiteName
 			#set($user = $core_v2_user.Current)
 			#set($falseValue = false)
 
-			Croeso i $core_v2_configuration.SiteName,
+			Croeso i $core_v2_configuration.SiteName
 
-			Mewngofnodwch fel $user.Username yn $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")' i gwrdd ag aelodau eraill y gymuned ac i ddechrau cymryd rhan.
+			Gan eich bod chi bellach wedi cofrestru ar gyfer ein Cymuned ar-lein gallwch fewngofnodi fel  $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")', cwrdd ag aelodau eraill y gymuned a dechrau cymryd rhan.
+
 			
-			Dyma ddolenni defnyddiol:
-			Eich proffil $core_v2_urls.Settings("%{Clean='true'}")
-			Help a chymorth http://www.biglotteryfund.org.uk/help-and-support
-			Chwilio hen grantiau, lle gallwch edrych drwy dudalennau a chreu tudalennau ar gyfer prosiectau a ariennir http://www.biglotteryfund.org.uk/funding/search-past-grants
+			Os nad ydych chi wedi llanw'ch proffil hyd yma, ewch ati yn awr. 
 
-			Hwyl ar y cysylltu!
+			Ymunwch â'r grŵp Dechrau Arni  (http://community.biglotteryfund.org.uk/uk-wide/getting_started/default.aspx) er mwyn i chi ddweud helo wrth yr aelodau eraill a chyflwyno'ch hun.
+
+			Rydym eisiau i chi gyfrannu a chael y gorau o'n Cymuned ar-lein. Felly ymunwch â'r sgwrs yn awr. 
+					
+			
+			Mae Cymuned ar-lein y Gronfa Loteri Fawr yn ymwneud â rhwydweithio, dysgu a rhannu cyngor. Rydym eisiau i bawb allu defnyddio a mwynhau'r safle hwn, felly gofynnwn i chi gadw at ein rheolau tŷ (www.biglotteryfund.org.uk/help-and-support/community-help/house-rules) a thelerau ac amodau (www.biglotteryfund.org.uk/about-big/customer-service/terms-of-use).
+
 			]]>
 		</textBody>
 	</emailTemplate>
