@@ -27,27 +27,30 @@ Mae $core_v2_user.Current.DisplayName yn eich gwahodd i ymuno â $core_v2_config
 
 <!-- HEADER END WELSH -->
 
-<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
-  <p>
-    Mae $user.DisplayName yn eich gwahodd i ymuno â $core_v2_configuration.SiteName:<br/>
-    <div>$email_utility.RenderHtml($invitation.Message)</div>
-  </p>
-  <p>
-    <a href="$core_v2_urls.AcceptInvitation($invitation.InvitationKey)">Derbyniwch y gwahoddiad hwn</a> ac ymuno â'r gymuned... Mae $core_v2_configuration.SiteName yn cynnig blogiau, fforymau, wicis, ac orielau cyfryngau er mwyn cydweithio â ffrindiau. Cysylltwch â $user.DisplayName ac eraill heddiw!
-  </p>
-</div>
+		<div style="font-family:'Trebuchet MS', Arial; font-size: 14px;">
+			<p>Mae $user.DisplayName yn eich gwahodd chi i ymuno â $core_v2_configuration.SiteName yn $core_v2_urls.Home():</p>
+			
+			<p>$email_utility.RenderText($invitation.Message)</p>
+			
+			<p>Derbyniwch y gwahoddiad yn $core_v2_urls.AcceptInvitation($invitation.InvitationKey) ac ymunwch â'r gymuned. Ar $core_v2_configuration.SiteName SiteName byddwch yn gallu rhwydweithio gyda phobl eraill, dysgu am brosiectau blaenorol a chael cyngor arbenigol a rhannu'ch gwybodaeth.</p>  
+			
+			<p>Cysylltwch â $user.DisplayName ac ymunwch â'r sgwrs.</p>
+		</div>
 			]]>
 		</htmlBody>
 		<textBody>
 			<![CDATA[
-#set($user = $core_v2_user.Current)
-#set($invitation = $core_v2_userInvitation.Current)
+	#set($user = $core_v2_user.Current)
+	#set($invitation = $core_v2_userInvitation.Current)
 
-Mae $user.DisplayName yn eich gwahodd i ymuno â $core_v2_configuration.SiteName yn $core_v2_urls.Home():
+	Mae $user.DisplayName yn eich gwahodd chi i ymuno â $core_v2_configuration.SiteName yn $core_v2_urls.Home():
+	
+	$email_utility.RenderText($invitation.Message)
+	
+	Derbyniwch y gwahoddiad yn $core_v2_urls.AcceptInvitation($invitation.InvitationKey) ac ymunwch â'r gymuned. Ar $core_v2_configuration.SiteName SiteName byddwch yn gallu rhwydweithio gyda phobl eraill, dysgu am brosiectau blaenorol a chael cyngor arbenigol a rhannu'ch gwybodaeth.  
+	
+	Cysylltwch â $user.DisplayName ac ymunwch â'r sgwrs.
 
-$email_utility.RenderText($invitation.Message)
-
-Derbyniwch y gwahoddiad hwn yn $core_v2_urls.AcceptInvitation($invitation.InvitationKey) ac ymuno â'r gymuned... Mae $core_v2_configuration.SiteName yn cynnig blogiau, fforymau, wicis, ac orielau cyfryngau er mwyn cydweithio â ffrindiau. Cysylltwch â $user.DisplayName ac eraill heddiw!
 			]]>
 		</textBody>
 	</emailTemplate>
