@@ -19,7 +19,7 @@ Welcome to $core_v2_configuration.SiteName
           <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
         </td>
         <td >
-          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Digital Community</div>
         </td>
       </tr>
     </table>
@@ -34,20 +34,20 @@ Welcome to $core_v2_configuration.SiteName
 			Welcome to $core_v2_configuration.SiteName,
 		</p>
 				<p>
-			Now that you have registered for our online Community you can sign in as <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a>, meet other community members and start taking part.
+			Now that you have registered for our digital Community you can sign in as <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a>, meet other community members and join the conversation.
 		</p>
 
 		  <p>
-		  	If you haven’t filled out your <a href="$core_v2_urls.Settings()">profile</a> yet please do so.
+		  Fill our your <a href="$core_v2_urls.Settings()">profile</a> and take a look around the site. 
 		  </p>
 		  <p>
-		  	Please join the <a href="http://community.biglotteryfund.org.uk/uk-wide/getting_started/default.aspx">Getting Started group</a> so you can say hello to other members and introduce yourself.
+		  	We're in our test phase so please join the <a href="https://community.biglotteryfund.org.uk/uk-wide/feedback/default.aspx">Feedback</a> group and let s know what you think.
 		  </p>
 		  <p>
-			We want you to contribute and get the best out of our online Community. So join the conversation now. 
+			We want everyone to be able to use and enjoy this site, so please abide by our <a href="http://www.biglotteryfund.org.uk/help-and-support/community-help/house-rules">house rules</a>  
 		  </p>			
 		  <p>
-			Big Lottery Fund online Community is about networking, learning and sharing advice. We want everyone to be able to use and enjoy this site, so please abide by our <a href="www.biglotteryfund.org.uk/help-and-support/community-help/house-rules">house rules</a> and <a href="www.biglotteryfund.org.uk/about-big/customer-service/terms-of-use">terms and conditions</a>.
+			The digital Community team
 		  </p>
 	</div>
 			]]>
