@@ -60,16 +60,15 @@ Membership request approved: Welcome to $core_v2_configuration.SiteName
 			Welcome to $core_v2_configuration.SiteName
 
 			Now that you have registered for our online Community you can sign in as $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")', meet other community members and start taking part.
-
 			
 			If you haven’t filled out your profile yet please do so.
 
-			Please join the Getting Started group (http://community.biglotteryfund.org.uk/uk-wide/getting_started/default.aspx) so you can say hello to other members and introduce yourself.
+			Please join the Feedback group (https://community.biglotteryfund.org.uk/uk-wide/feedback/default.aspx) so you can say hello to other members and introduce yourself.
 
 			We want you to contribute and get the best out of our online Community. So join the conversation now. 
 					
 			
-			Big Lottery Fund online Community is about networking, learning and sharing advice. We want everyone to be able to use and enjoy this site, so please abide by our house rules(www.biglotteryfund.org.uk/help-and-support/community-help/house-rules) and terms and conditions (www.biglotteryfund.org.uk/about-big/customer-service/terms-of-use).
+			Big Lottery Fund digital Community is about networking, learning and sharing advice. We want everyone to be able to use and enjoy this site, so please abide by our house rules(www.biglotteryfund.org.uk/help-and-support/community-help/house-rules).
 
 			]]>
 		</textBody>
