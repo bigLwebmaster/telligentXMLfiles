@@ -71,8 +71,10 @@
   </message>
 
   <message id="17">
-    <title>Invalid user credentials</title>
-    <body>The username and/or password cannot be validated or your account has not been approved yet.</body>
+    <title>We haven’t recognised your username and/or password</title>
+    <body><p>The username and/or password you entered seems to be wrong, please try again. Remember that passwords are case-sensitive and email addresses are not usernames.</p> 
+    <<p>If you have any further problems please email community@biglotteryfund.org.uk</p>
+    </body>
   </message>
 
   <message id="18">
