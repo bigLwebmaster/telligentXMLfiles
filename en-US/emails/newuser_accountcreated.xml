@@ -2,7 +2,7 @@
 	<emailTemplate name="newuser_accountcreated">
 		<subject>
 			<![CDATA[
-Welcome to $core_v2_configuration.SiteName
+Welcome to the $core_v2_configuration.SiteName
 			]]>
 		</subject>
 <htmlBody>
@@ -19,7 +19,7 @@ Welcome to $core_v2_configuration.SiteName
           <img src="http://www.biglotteryfund.org.uk/-/media/Images/PageImages/uklogo.gif" width=80 height=80 border="0" alt="Big Lottery Fund" />
         </td>
         <td >
-          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Digital Community</div>
+          <div style=" margin-top:15px;padding:15px; margin-left:20px;font-family:Trebuchet MS, Arial, Helvetica, sans-serif; font-size:28px; color:#E2007A;">Online Community</div>
         </td>
       </tr>
     </table>
@@ -31,23 +31,24 @@ Welcome to $core_v2_configuration.SiteName
 
 	<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 		<p>
-			Welcome to $core_v2_configuration.SiteName,
+			Welcome to the $core_v2_configuration.SiteName,
 		</p>
 				<p>
-			Now that you have registered for our digital Community you can sign in as <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a>, meet other community members and join the conversation.
+			Sign in as $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")' to meet other community members and start participating.
 		</p>
 
 		  <p>
-		  Fill our your <a href="$core_v2_urls.Settings()">profile</a> and take a look around the site. 
+		  Here are some useful links:
+		  <ul>
+		  <li>Your profile $core_v2_urls.Settings("%{Clean='true'}")</li>
+		  <li>Help &amp; support http://www.biglotteryfund.org.uk/help-and-support</li>
+		  <li>Past grants search, where you can explore and create pages for funded projects http://www.biglotteryfund.org.uk/funding/search-past-grants</li>
+		  </ul>
 		  </p>
+		  
+		 		
 		  <p>
-		  	We're in our test phase so please join the <a href="https://community.biglotteryfund.org.uk/uk-wide/feedback/default.aspx">Feedback</a> group and let s know what you think.
-		  </p>
-		  <p>
-			We want everyone to be able to use and enjoy this site, so please abide by our <a href="http://www.biglotteryfund.org.uk/help-and-support/community-help/house-rules">house rules</a>  
-		  </p>			
-		  <p>
-			The digital Community team
+			Happy connecting
 		  </p>
 	</div>
 			]]>
@@ -57,7 +58,7 @@ Welcome to $core_v2_configuration.SiteName
 			#set($user = $core_v2_user.Current)
 			#set($falseValue = false)
 
-			Welcome to $core_v2_configuration.SiteName,
+			Welcome to the $core_v2_configuration.SiteName,
 
 			Sign in as $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")' to meet other community members and start participating.
 			
