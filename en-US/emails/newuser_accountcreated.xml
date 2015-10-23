@@ -31,26 +31,29 @@ Welcome to the $core_v2_configuration.SiteName
 
 	<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 		<p>
-			Welcome to the $core_v2_configuration.SiteName,
+			Welcome to our $core_v2_configuration.SiteName,
 		</p>
 				<p>
-			Sign in as $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")' to meet other community members and start participating.
+			And thank you for joining
 		</p>
 
 		  <p>
-		  Here are some useful links:
-		  <ul>
-		  <li>Your profile $core_v2_urls.Settings("%{Clean='true'}")</li>
-		  <li>Help &amp; support http://www.biglotteryfund.org.uk/help-and-support</li>
-		  <li>Past grants search, where you can explore and create pages for funded projects http://www.biglotteryfund.org.uk/funding/search-past-grants</li>
-		  </ul>
+		  Now sign in to seek advice, be part of relevant conversations and connect with the 
+		  right people by commenting on blogs and taking part in forum discussions. 
+		  Plus, add some details to your profile to let other members know a bit more about your interests.
 		  </p>
 		  
 		 		
 		  <p>
-			Happy connecting
+			We want everyone to be able to use and enjoy the
+			site so we’d appreciate you abiding by our <a href="https://www.biglotteryfund.org.uk/help-and-support/community-help/guidelines">community guidelines</a>.
+		  </p>
+		   <p>
+		And finally, as this is a new network, we value your feedback. 
+		So do <a href="http://www.surveygizmo.com/s3/1352033/New-BIG-website-feedback-copy-September-3-2013 ">tell us</a> what you think of our site.
 		  </p>
 	</div>
+
 			]]>
 </htmlBody>
 		<textBody>
@@ -58,16 +61,21 @@ Welcome to the $core_v2_configuration.SiteName
 			#set($user = $core_v2_user.Current)
 			#set($falseValue = false)
 
-			Welcome to the $core_v2_configuration.SiteName,
+			Welcome to our $core_v2_configuration.SiteName,
 
-			Sign in as $user.Username at $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")' to meet other community members and start participating.
+			And thank you for joining.
 			
-			Here are some useful links:
-			Your profile $core_v2_urls.Settings("%{Clean='true'}")
-			Help &amp; support http://www.biglotteryfund.org.uk/help-and-support
-			Past grants search, where you can explore and create pages for funded projects http://www.biglotteryfund.org.uk/funding/search-past-grants
+			Now sign in to seek advice, be part of relevant 
+			conversations and connect with the right people by 
+			commenting on blogs and taking part in forum discussions. 
+			Plus, add some details to your profile to let other members 
+			know a bit more about your interests.
 
-			Happy connecting!
+			We want everyone to be able to use and enjoy 
+			the site so we’d appreciate you abiding by our community guidelines https://www.biglotteryfund.org.uk/help-and-support/community-help/guidelines.
+			
+			And finally, as this is a new network, we value your feedback. So do tell us what you think of our site.
+			http://www.surveygizmo.com/s3/1352033/New-BIG-website-feedback-copy-September-3-2013
 			]]>
 		</textBody>
 	</emailTemplate>
