@@ -72,9 +72,7 @@
 
   <message id="17">
     <title>Your username and/or password hasn’t been recognised</title>
-    <body><p>There was an error with your email/password combination. Please try again. Remember that passwords are case-sensitive.</p> 
-    <p>If you need it, <a href="https://community.biglotteryfund.org.uk/user/emailforgottenpassword.aspx">get a password reminder</a>, or if you have any further problems please email community@biglotteryfund.org.uk</p>
-    </body>
+    <body>Please try again. Remember that passwords are case-sensitive, and your username will be your email or your name.</body>
   </message>
 
   <message id="18">
